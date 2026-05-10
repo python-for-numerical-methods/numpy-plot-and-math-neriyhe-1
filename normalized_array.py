@@ -1,10 +1,10 @@
 import numpy as np
 
-def normalized_array(data):
-  data_arr = np.array(input_array)
-  if np.all(data_arr == data_arr[0]):
-    return np.zeros(data_arr.shape)
+def normalized_array(input_array):
+  data = np.array(input_array)
+  if np.all(data == data[0]):
+    return np.zeros(data.shape)
   else:
-    new_arr = (data_arr - np.min(data_arr))/(np.max(data_arr) - np.min(data_arr))
+    new_array = (data - np.min(data))/(np.max(data) - np.min(data))   
 
-  return new_arr
+  return new_array
